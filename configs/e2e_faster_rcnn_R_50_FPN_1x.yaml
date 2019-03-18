@@ -20,9 +20,10 @@ MODEL:
     POOLER_SAMPLING_RATIO: 2
     FEATURE_EXTRACTOR: "FPN2MLPFeatureExtractor"
     PREDICTOR: "FPNPredictor"
+    NUM_CLASSES: 6
 DATASETS:
-  TRAIN: ("coco_2014_train", "coco_2014_valminusminival")
-  TEST: ("coco_2014_minival",)
+  TRAIN: ("tianchi_2019_train","tianchi_2019_normaltrain2_3")
+  TEST: ("tianchi_2019_rnval",)
 DATALOADER:
   SIZE_DIVISIBILITY: 32
 SOLVER:
@@ -30,3 +31,6 @@ SOLVER:
   WEIGHT_DECAY: 0.0001
   STEPS: (60000, 80000)
   MAX_ITER: 90000
+INPUT:
+  MIN_SIZE_TRAIN: (500,600,700,800,900,1000,1100,1200)
+OUTPUT_DIR: /home/siting/files/DingGuo/tianchi_model/faster_R50_idx016

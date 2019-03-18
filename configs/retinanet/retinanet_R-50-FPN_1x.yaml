@@ -25,16 +25,17 @@ MODEL:
     POOLER_SAMPLING_RATIO: 2
     FEATURE_EXTRACTOR: "FPN2MLPFeatureExtractor"
     PREDICTOR: "FPNPredictor"
+    NUM_CLASSES: 6
   RETINANET:
     SCALES_PER_OCTAVE: 3
     STRADDLE_THRESH: -1
     FG_IOU_THRESHOLD: 0.5
     BG_IOU_THRESHOLD: 0.4
 DATASETS:
-  TRAIN: ("coco_2014_train", "coco_2014_valminusminival")
-  TEST: ("coco_2014_minival",)
+  TRAIN: ("tianchi_2019_train","tianchi_2019_normaltrain2_3")
+  TEST: ("tianchi_2019_rnval",)
 INPUT:
-  MIN_SIZE_TRAIN: (800,)
+  MIN_SIZE_TRAIN: (500,600,700,800,900,1000,1100,1200)
   MAX_SIZE_TRAIN: 1333
   MIN_SIZE_TEST: 800
   MAX_SIZE_TEST: 1333
@@ -47,3 +48,4 @@ SOLVER:
   STEPS: (120000, 160000)
   MAX_ITER: 180000
   IMS_PER_BATCH: 8
+OUTPUT_DIR: /home/siting/files/DingGuo/tianchi_model/retinanet_R50_idx016

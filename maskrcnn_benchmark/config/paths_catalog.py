@@ -7,13 +7,74 @@ import os
 class DatasetCatalog(object):
     DATA_DIR = "datasets"
     DATASETS = {
+        "tianchi_2019_train": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/restricted",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_train2019.json"
+        },
+        "tianchi_2019_val": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/restricted",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_val2019.json"
+        },
+        "tianchi_2019_normaltrain1_1": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/1_1/tianchi_instances_normaltrain2019.json"
+        },
+        "tianchi_2019_normalval1_1": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/1_1/tianchi_instances_normalval2019.json"
+        },
+        "tianchi_2019_normaltrain2_3": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_3/tianchi_instances_normaltrain2019.json"
+        },
+        "tianchi_2019_normalval2_3": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_3/tianchi_instances_normalval2019.json"
+        },
+        "tianchi_2019_normaltrain2_5": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_5/tianchi_instances_normaltrain2019.json"
+        },
+        "tianchi_2019_normalval2_5": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_5/tianchi_instances_normalval2019.json"
+        },
+        "tianchi_2019_normaltrain": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_normaltrain2019.json"
+        },
+
+        "tianchi_2019_normalval": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_normalval2019.json"
+        },
+        "tianchi_2019_test_a": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_test_a_20190306",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/tianchi_instances_test_a_2019.json"
+        },
+        "tianchi_2019_rnval": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/rn",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_3/tianchi_instances_rnval2019.json"
+        },
+        "tianchi_2019_merge": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/merge",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/tianchi_instances_merge2019.json"
+        },
+        "tianchi_2019_example_nopoly": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/example/example_without_poly",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/example/example_without_poly.json"
+        },
+        "tianchi_2019_example_poly": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/example/example_poly",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/example/example_poly.json"
+        },
         "coco_2017_train": {
-            "img_dir": "coco/train2017",
-            "ann_file": "coco/annotations/instances_train2017.json"
+            "img_dir": "/home/siting/detectron/detectron/datasets/data/coco/train2017",
+            "ann_file": "/home/siting/detectron/detectron/datasets/data/coco/annotations/instances_train2017.json"
         },
         "coco_2017_val": {
-            "img_dir": "coco/val2017",
-            "ann_file": "coco/annotations/instances_val2017.json"
+            "img_dir": "/home/siting/detectron/detectron/datasets/data/coco/val2017",
+            "ann_file": "/home/siting/detectron/detectron/datasets/data/coco/annotations/instances_val2017.json"
         },
         "coco_2014_train": {
             "img_dir": "coco/train2014",
@@ -130,8 +191,18 @@ class DatasetCatalog(object):
                 factory="PascalVOCDataset",
                 args=args,
             )
+        elif "tianchi" in name:
+            data_dir = DatasetCatalog.DATA_DIR
+            attrs = DatasetCatalog.DATASETS[name]
+            args = dict(
+                root=os.path.join(data_dir, attrs["img_dir"]),
+                ann_file=os.path.join(data_dir, attrs["ann_file"]),
+            )
+            return dict(
+                factory="COCODataset",
+                args=args,
+            )
         raise RuntimeError("Dataset not available: {}".format(name))
-
 
 class ModelCatalog(object):
     S3_C2_DETECTRON_URL = "https://dl.fbaipublicfiles.com/detectron"

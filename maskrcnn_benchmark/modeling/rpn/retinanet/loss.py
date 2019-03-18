@@ -81,7 +81,13 @@ class RetinaNetLossComputation(RPNLossComputation):
 
 
 def generate_retinanet_labels(matched_targets):
-    labels_per_image = matched_targets.get_field("labels")
+    # labels_per_image = matched_targets.get_field("labels")
+    if matched_targets.bbox.shape[0]:
+        labels_per_image = matched_targets.get_field("labels")
+    else:
+        # maybe
+        matched_idxs = matched_targets.get_field("matched_idxs")
+        labels_per_image = matched_idxs >= 0
     return labels_per_image
 
 
