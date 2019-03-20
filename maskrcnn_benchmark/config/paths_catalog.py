@@ -63,7 +63,7 @@ class DatasetCatalog(object):
         },
         "tianchi_2019_rnval": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/rn",
-            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/5_1/tianchi_instances_rnval2019.json"
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_3/tianchi_instances_rnval2019.json"
         },
         "tianchi_2019_merge": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/merge",
