@@ -25,14 +25,14 @@ MODEL:
     POOLER_SAMPLING_RATIO: 2
     FEATURE_EXTRACTOR: "FPN2MLPFeatureExtractor"
     PREDICTOR: "FPNPredictor"
-    NUM_CLASSES: 6
   RETINANET:
     SCALES_PER_OCTAVE: 3
     STRADDLE_THRESH: -1
     FG_IOU_THRESHOLD: 0.5
     BG_IOU_THRESHOLD: 0.4
+    NUM_CLASSES: 6
 DATASETS:
-  TRAIN: ("tianchi_2019_train","tianchi_2019_normaltrain2_3")
+  TRAIN: ("tianchi_2019_train","tianchi_2019_normaltrain5_1")
   TEST: ("tianchi_2019_rnval",)
 INPUT:
   MIN_SIZE_TRAIN: (500,600,700,800,900,1000,1100,1200)

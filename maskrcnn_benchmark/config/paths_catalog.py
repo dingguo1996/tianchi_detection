@@ -39,6 +39,14 @@ class DatasetCatalog(object):
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
             "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_5/tianchi_instances_normalval2019.json"
         },
+        "tianchi_2019_normaltrain5_1": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/5_1/tianchi_instances_normaltrain2019.json"
+        },
+        "tianchi_2019_normalval5_1": {
+            "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/5_1/tianchi_instances_normalval2019.json"
+        },
         "tianchi_2019_normaltrain": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
             "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_normaltrain2019.json"
@@ -48,13 +56,14 @@ class DatasetCatalog(object):
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/normal",
             "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/tianchi_instances_normalval2019.json"
         },
+
         "tianchi_2019_test_a": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_test_a_20190306",
             "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/tianchi_instances_test_a_2019.json"
         },
         "tianchi_2019_rnval": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/rn",
-            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/2_3/tianchi_instances_rnval2019.json"
+            "ann_file": "/home/siting/files/DingGuo/tianchidataset/round1/jinnan2_round1_train_20190305/split/fbrate/5_1/tianchi_instances_rnval2019.json"
         },
         "tianchi_2019_merge": {
             "img_dir": "/home/siting/files/DingGuo/tianchidataset/round1/merge",
